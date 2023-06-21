@@ -64,7 +64,7 @@ class App extends Component {
         () => {
           if (pages !== 1)
             window.scrollBy({
-              top: 502 * 3,
+              top: 330 * 3,
               behavior: "smooth",
             });
         }
