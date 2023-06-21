@@ -1,0 +1,68 @@
+.galleryList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 0px;
+}
+.galleryLink {
+  overflow: hidden;
+}
+.imagesLi {
+  /* list-style-type: none; */
+  background-size: 100%;
+  min-width: 310px;
+  border: 2px solid #f1eeee;
+  border-radius: 5px;
+  flex-basis: calc(25% - 20px);
+  margin-top: 20px;
+  /* margin-left: 20px; */
+  transition: all 0.3s;
+  overflow: hidden;
+}
+.imagesLi:hover,
+.imagesLi:focus {
+  transform: scale(1.05);
+  /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); */
+}
+
+.load-more {
+  margin: 0 auto;
+  display: none;
+  width: 128px;
+}
+.imageCard {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1200;
+}
+
+.modal {
+  max-width: calc(100vw - 48px);
+  max-height: calc(100vh - 24px);
+}
+
+.loadMore {
+  display: block;
+  margin: 0 auto;
+  background-color: rgb(101, 106, 246);
+  border: 0px;
+  border-radius: 2px;
+  font-size: 24px;
+  width: 400px;
+  height: 40px;
+  outline: none;
+  color: azure
+}
